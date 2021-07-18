@@ -1,20 +1,13 @@
 @media (max-width: 600px) {
-    .navbar {
-        height: 100px;
-    .brand-h{
-        height: 20px;
-        display: flex;
-        justify-content: center;
+
+    .tela{ 
+        height: 1200px;
+        display: grid;
+        height: 90%;  
     
-  
-    }
-    .main{
-        height: 1000px;
-        justify-content: center;
-    .main-l {
-        height: 1000px;
-        justify-content: center;
-    }
-    }    
-}
-}
+        .footer{
+            margin-top: calc(10px - 100px);
+        }     
+          
+}  
+}    

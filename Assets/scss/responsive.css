@@ -1,27 +1,12 @@
 @media (max-width: 600px) {
-  .navbar {
-    height: 100px;
+  .tela {
+    height: 1200px;
+    display: -ms-grid;
+    display: grid;
+    height: 90%;
   }
-  .navbar .brand-h {
-    height: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .navbar .main {
-    height: 1000px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .navbar .main .main-l {
-    height: 1000px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .tela .footer {
+    margin-top: calc(10px - 100px);
   }
 }
 /*# sourceMappingURL=responsive.css.map */

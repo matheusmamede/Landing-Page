@@ -166,6 +166,12 @@ a {
   color: white;
 }
 
+.footer .logogit {
+  height: 33px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 .product {
   position: absolute;
   top: 90px;
@@ -175,11 +181,6 @@ a {
 .img-product {
   width: 300px;
   height: 300px;
-}
-
-.btn {
-  color: white;
-  margin-left: 480px;
 }
 
 @media (max-width: 600px) {

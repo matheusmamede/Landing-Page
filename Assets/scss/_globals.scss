@@ -151,6 +151,11 @@ a {
     justify-content: center;
     color: white;
 
+   & .logogit {
+    height: 33px;
+    margin-top: 5px;
+    margin-left: 5px;
+} 
 }
 
 .product {
@@ -164,7 +169,3 @@ a {
     height: 300px;
 }
 
-.btn {
-    color: white;
-    margin-left: 480px;
-}
