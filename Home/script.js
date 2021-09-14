@@ -1,5 +1,4 @@
 
-function cadastrar(){
-  var salvarEmail=document.getElementById('email');
-    localStorage.setItem("email", salvarEmail.value);
+function redirecionar(){
+  window.location.href = "https://www.instagram.com/nailson.nutricionista/"
 };
