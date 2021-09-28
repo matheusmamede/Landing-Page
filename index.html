@@ -8,12 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./Assets/img/logo-nailson2.png">
   <link rel="stylesheet" href="./Assets/css/home.css">
+  <link rel="stylesheet" href="./Assets/css/responsive.css">
 
   <title>Nailson Nutricionista</title>
   <script src="/Home/script.js"></script>
 
 </head>
-<body class="tela">
+<body onload="iniciaSlider">
 
   
     <nav class="navbar">
@@ -24,25 +25,22 @@
     <section class="section-one">
     <div class="main">
       <div class="main-l">
-        <h1 class="titulo">Venha fazer a sua avaliação!</h1>
+        <h1 class="titulo">Conquiste o resultado dos seus sonhos!</h1>
           <div class="description">
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam.</p>
-            
-          </div>
-          
+             <p>Cansado(a) de treinar por meses e não sair do lugar?</p>
+             <span style="color: yellow;">EU TENHO A SOLUÇÃO PARA VOCÊ!</span>
+             <img src="/Assets/img/icons8-double-down-50.png"/>
+             <img src="/Assets/img/icons8-double-down-50.png"/>
+             <img src="/Assets/img/icons8-double-down-50.png"/>
+            </div>
+           
+        <div class="mencao">
+          <p>Photo by <a href="https://www.pexels.com/@victorfreitas?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Victor Freitas</a> from <a href="https://www.pexels.com/photo/man-carrying-barbel-791763/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p>
+        </div>  
           <!-- <div class="banner">
             <img id="img" src="./Assets/img/Nailson-semfundo.png" alt="Nutricionista">
           </div> -->
     
-          <div class="contato">
-            <form class="form"> 
-            <h3>Não perca tempo e faça já sua inscrição!</h3>
-            <a href="https://www.instagram.com/nailson.nutricionista/"><button class="field2" type="button" >Faça sua inscrição</button></a>
-          </form>
-
-        </div>
        
       </div>
     </div>
@@ -51,9 +49,10 @@
     <section>
       <div class="main2">
         <div class="main-l2">
-          <img id="img2" src="Assets/img/icons8-note-64.png" alt="note-icon">
+          <img id="img2" src="Assets/img/Nailson.png" alt="note-icon">
+          <figcaption class="figcap">Nailson Oliveira <br/> Nutricionista Esportivo</figcaption>
       
-          <h1 class="titulo2">Teste</h1>
+          <!-- <h1 class="titulo2">Teste</h1> -->
           <p class="descricao2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, , quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
@@ -62,6 +61,26 @@
             qui officia deserunt mollit anim id est laborum.
           </p>
 
+          <h1 class="tittle">Em <span style="color: red;">2 meses</span> você terá <span style="color: yellow;">resultados!</span></h1>
+          
+          <div id="container">
+          <div id="slider">
+            <img class="foto" src="./Assets/img/allmight.jpg">
+            <img class="foto" src="/Assets/img/allmight2.png">
+          </div>
+            <iframe width="680" height="400" src="https://www.youtube.com/embed/SRn99oN1p_c" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            
+        </div>
+        <figcaption class="">Antes / Depois</figcaption>
+        <div class="contato">
+          <form class="form"> 
+          <h3>Não perca tempo e faça já sua inscrição!</h3>
+          <a href="https://www.instagram.com/nailson.nutricionista/"><button class="field" type="button" >Sim quero transformar o meu corpo!</button></a>
+        </form>
+        </div>
         </div>  
       </div>
     </section>
@@ -70,15 +89,14 @@
         <div class="main3">
           <div class="main-l3">
             
-            <h1>Tenha <span style="color: yellow;">resultados</span> incríveis!</h1>
+            <h1>Veja a seguir <span style="color: yellow;">resultados incríveis</span> alcançados pelos meus alunos!</h1>
             
-            <div id="container">
+            <div class="container2">
             <img src="./Assets/img/allmight.jpg">
             <iframe width="680" height="400" src="https://www.youtube.com/embed/SRn99oN1p_c" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
-            <h1></h1>
             </div>
             <div class="container2">
             <img src="./Assets/img/allmight.jpg">
@@ -86,7 +104,14 @@
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
-            </div>  
+            </div>
+            <div class="container2">
+              <img src="./Assets/img/allmight.jpg">
+              <iframe width="680" height="400" src="https://www.youtube.com/embed/SRn99oN1p_c" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+              </div>  
         </div>
         </div>
         
@@ -94,44 +119,129 @@
 
     <section>
       <div class="main4">
-
-        <div class="alunos">
-          <h1>Depoimento dos Alunos</h1>
-        </div>
-
-        <div class="feedback">
-          <figure id="fig1">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre00.deviantart.net%2F89b7%2Fth%2Fpre%2Ff%2F2013%2F009%2Fa%2F0%2Fa0ef338f0d1217d9f7ebff0e977fba1f-d5qyge6.jpg&f=1&nofb=1">
-            <figcaption style="line-height: 2.0" class="figcap">Fulano</figcaption>
-            <figcaption class="figcap2">Muito bom! "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </figcaption>
-          </figure>
-          <figure id="fig2">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F99%2Fdb%2F63%2F99db63d42f7e22a562e0e3c9b17a7c16.jpg&f=1&nofb=1">
-            <figcaption style="line-height: 2.0" class="figcap">Ciclano</figcaption>
-            <figcaption class="figcap2">Gostei! "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </figcaption>
-          </figure>
-          <figure id="fig3">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.zerochan.net%2FRonan.Erudon.full.1116222.jpg&f=1&nofb=1">
-            <figcaption style="line-height: 2.0" class="figcap">Beltrano</figcaption>
-            <figcaption class="figcap2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </figcaption>
-          </figure>
+        <div class="main-l4">
+        <div class="beneficios">
+          <h1>O que você terá direito ao adquirir <br/>
+          O Programa de Consutoria</h1>
+            
+          <ul>
+            <li>
+              <img src="/Assets/img/icons8-ebook-100.png" alt="icons8">
+              <figcaption class="">Ebook</figcaption>
+            </li>
+            <li>
+              <img src="/Assets/img/icons8-pdf-90.png" alt="icons8">
+            <figcaption class="">PDF de Receitas</figcaption>
+            </li>
+            <li>
+              <img src="/Assets/img/icons8-list-90.png" alt="icons8">
+            <figcaption class="">Lista de compras</figcaption>
+            </li>
+            <li>
+              <img src="/Assets/img/icons8-whatsapp-90.png" alt="icons8">
+            <figcaption class="">Atendimento via Whatsapp</figcaption>
+            </li>
+            <li>
+              <img src="/Assets/img/icons8-clipboard-100.png" alt="icons8">
+              <figcaption class="">Anamnese Nutricional</figcaption>
+            </li>
+          </ul>
+          
+          
+            
+            <div class="beneficios">
+            <ul>
+              <li>
+                <img src="/Assets/img/icons8-planner-96.png" alt="icons8">
+                <figcaption>Planner Dietético</figcaption>
+              </li>
+              <li>
+                <img src="/Assets/img/icons8-weight-100.png" alt="icons8">
+                <figcaption>Bioimpedância</figcaption>
+              </li>
+              <li>
+                <img src="/Assets/img/icons8-sewing-tape-measure-96.png" alt="icons8">
+                <figcaption>Avaliação Física</figcaption>
+              </li>
+              <li>
+                <img src="/Assets/img/icons8-schedule-100.png" alt="icons8">
+                <figcaption>Agendamento Presencial e On-line</figcaption>
+              </li>
+              <li>
+                <img src="/Assets/img/icons8-treatment-100.png" alt="icons8">
+                <figcaption>Análise de Exames Bioquímicos</figcaption>
+              </li>
+            </ul>
+            </div>  
+            <div class="bonus">
+              <h1>Bônus</h1>
+              <img>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation
+                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+          </div> 
         </div>
       </div>
     </section>
-  
+
+    <section>
+      <div class="main5">
+        <div class="alunos">
+          <h1>Feedback</h1>
+          <p>Já são mais de 100 alunos satisfeitos com
+            o programa de consutoria!<br/> Não perca tempo e começe
+            já!
+          </p>
+        </div>
+
+        <div class="feedback">
+            <div id="slider">
+              <img class="foto" src="./Assets/img/allmight.jpg">
+              <img class="foto" src="/Assets/img/allmight2.png">
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="main6">
+        <div class="main-l6">
+        <div class="planost">
+          <h1 class="titulo6"><span style="color: yellow;">Promoção</span> especial para os
+            <span style="color: red;"> 5 primeiros</span> <br/> que obtiverem o plano de
+            consutoria!</h1>
+          </div>
+          <div class="planos">
+            <h1>Plano Básico - 1 mês R$..,..</h1>
+            <h1>Plano Intermediário - 2 mês R$..,..</h1>
+            <h1>Plano Avançado - 3 mês R$..,..</h1>
+            <h1>Plano Supremo - 6 mês R$..,..</h1>
+            <h1>Plano Ultra Instinto - 1 Ano mês R$..,..</h1>
+          </div>
+          <div class="contato2">
+              <form class="form2"> 
+              <h3>Não perca tempo e faça já sua inscrição!</h3>
+              <a href="https://www.instagram.com/nailson.nutricionista/"><button class="field2" type="button" >Sim quero transformar o meu corpo!</button></a>
+            </form>
+            </div>
+      </div>
+    </div>
+    </section>
+
+  <section>
   <footer class="footer">
     <p>Redes Sociais </p>
     <div class="midias">
     <a href="https://www.instagram.com/nailson.nutricionista/"> <img src="./Assets/img/icons8-instagram-logo-26.png" onmouseover="this.src='./Assets/img/icons8-instagram-logo.png'"
-            onmouseout="this.src='./Assets/img/icons8-instagram-logo-26.png'"></a>
+            onmouseout="this.src='./Assets/img/icons8-instagram-logo-26.png'"></a>            
     </div>
+    <p><br/> Icons by <a href="https://icons8.com/">icons8</a></p>
+    
   </footer>
+  </section>
+  
 
 </body>
 </html>

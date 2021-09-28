@@ -1,0 +1,153 @@
+/* media queries */
+@media (max-width: 768px) {
+    html{
+        font-size:50%;
+    }
+
+    .titulo{
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .description{
+        text-align: center;
+        width: 100%;
+    }
+
+    .description span{
+        text-align: center;
+        width: 100%;
+    }
+
+    .mencao{
+        margin-top: 40px;
+    }
+    
+    /* main 2 */
+
+    .main2{
+        height: auto;
+    }
+    #slider{
+        margin-left: auto;
+        margin-right: auto;
+        height: 250px;
+        width: 180px;
+    }
+
+
+    #container img{
+        height: 250px;
+        width: 180px;
+    }
+
+    .container2 img{
+        height: 250px;
+        width: 180px;
+    }
+    
+    .container3 img{
+        height: 250px;
+        width: 180px;
+    }
+
+    iframe {
+        width: 340px;
+        height: 200px;
+    }
+
+    .field{
+        width: auto;
+        color: white;
+        background-color: #1dd800;
+    }
+
+    .main3{
+        height: 205vh;
+    }
+
+    .main4{
+        height: 270vh
+
+    }
+
+    .beneficios img{
+        height: 45px;
+    }
+
+    .main5{
+        height: 80vh;
+    }
+    /* .beneficios ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+        grid-gap: 20px;
+    } */
+
+    .field2{
+        width: auto;
+        color: white;
+        background-color: red;
+    }
+  
+}
+
+@media (max-width: 687px){
+    html{
+        font-size:40%;
+    }
+
+    .main{
+        background-image: url(/Assets/img/pexels-victor-freitasp.jpg);  
+    }
+
+    .main2{
+        height: auto;
+    }
+
+    iframe{
+        width:auto;
+        height:auto;
+    }
+
+    .main3{
+        height: 300vh
+    }
+
+    .form h3{
+        font-size: 90%;
+    }
+
+    #container{
+       display: grid;
+       grid-gap: 20px; 
+    }
+
+    #container img{
+        margin-left: auto;
+        margin-right: auto ;
+    }
+    .container2{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    .container2 img{
+        margin-left: auto;
+        margin-right: auto ;
+    }
+    
+    .container3{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    .container3 img{
+        margin-left: auto;
+        margin-right: auto ;
+    }
+    .main4{
+        height: 380vh;
+    }
+
+}

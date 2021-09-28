@@ -4,10 +4,22 @@
     scroll-behavior: smooth;
 }
 
+html{
+    /* A cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+
+html,
 body{
  margin: 0;
  padding: 0;
  font-family: 'Public Sans', sans-serif;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialised;       
+}
+
+body{
+    font-size: 1.6rem;
 }
 
 .navbar {
@@ -15,13 +27,15 @@ body{
     width: 100%;
     height: 64px;
     background-color: white;
-    position: fixed;  
+    position: fixed;
 }
 
 .nav-ul {
     margin: 0;
     padding: 5px;
     list-style: none;
+    min-width: auto;
+    max-width: auto;
 }
 
 
@@ -35,73 +49,65 @@ body{
 
 
 .main {
-    background: rgb(248, 245, 245);
+    background-image: url(/Assets/img/pexels-victor-freitas.jpg);
+    background-size: cover;
     width: 100%;
+    margin: auto;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
+.main img{
+    object-fit: cover;
+}
 .main-l {
     width: 80%;
-    padding-top: 120px;
+    margin-top: 120px;
 }
 
 .titulo {
+   margin-top: 150px;
     width: 100%;
     text-align: left;
-    font-size: 53px;
-    color: #43BF22;
-
+    font-size: 3rem;
+    color: rgb(21, 255, 0);
 }
 
 .description {
     text-align: left;
-    width: 50%;
-    color:black;
+    width: 70%;
+    color:white;
     letter-spacing: 0.01em;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 2rem;
 }
 
-#img{
-    
+.description span{
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 80px;
 }
 
-.contato {
-    color: black;
-    width: 100%; 
+.description img{
+    display: inline-block;
+    height: auto;
+    padding: 1px;
+    margin-top: 30px;      
 }
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.field2 {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid white;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: 500;
-    width: 250px;
-    max-width: 300px;
-    background-color: rgb(203, 198, 207);
-}
-
-.field2:hover {
-    transition: background .4s ;
+.mencao{
+    margin-right: auto;
+    margin-top: 80px;
     color: white;
-    background-color: #1dd800;
-    cursor: pointer;
+    text-align: end;
 }
 
 .main2{
-    background: #238401;
+    background: black;
     width: 100%;
-    height: 100vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
 }
@@ -111,35 +117,64 @@ body{
     width: 80%;
 }
 
-.titulo2 {
-    text-align: center;
-    font-size: 30px;
-}
-
-.descricao2{
-    text-align: left;
-    font-size: 16px;
-}
-
-/* .video{
-    margin-top: 70px;
+#img2 {
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-} */
-.main3{
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: #43BF22;
+    height: 256px;
+    border: solid 5px white;
+   
 }
 
-.main-l3{
-    width: 80%;
-    justify-content: center;
-    font-size: 40px;
+/* .titulo2 {
+    text-align: center;
+    font-size: 1rem;
+} */
+
+.descricao2{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.tittle{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#slider{
+    width: 100%;
+    max-width: 256px;
+    height: 200vw;
+    max-height: 380px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+    opacity: 0;
+    position:absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transition: 4s;
+    }
+}
+
+.foto:nth-child(1){
+    
+}
+.foto:nth-child(2){
+    animation-delay: 5s;
 }
 
 #container img{
@@ -149,7 +184,64 @@ body{
 #container{
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    align-items: center;
+}
+
+.contato {
+    margin-top: 30px;
+    color: white;
+    width: 100%; 
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    font-size: 3.0rem;
+    flex-direction: column;
+    color: yellow;
+}
+
+.field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    width: 350px;
+    max-width: 350px;
+    background-color: rgb(203, 198, 207);
+}
+
+.field:hover {
+    transition: background .4s ;
+    color: white;
+    background-color: #1dd800;
+    cursor: pointer;
+}
+
+.main3{
+    width: 100%;
+    height: 220vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(37, 230, 20)
+}
+
+.main-l3{
+    width: 80%;
+    justify-content: center;
+    font-size: 3.0rem;
+}
+
+.container img{
+    height: 390px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -158,47 +250,53 @@ body{
 }
 
 .container2{
-    margin-top: 400px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-#img2 {
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 64px;
 }
 
 .main4{
     width: 100%;
-    height: 100vh;
-    background-color: cadetblue;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;   
 }
 
 .main-l4{
     width: 80%;
+    text-align: center;
+    justify-content: center;
 }
 
-.alunos{
-    padding-top: 3px;
-    font-size: 30px;
-    text-align: center;
+.main4 h1{
+    font-size: 3.0rem;
 }
 
-.feedback{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    text-align: center;
+.beneficios ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    
 }
+
+.beneficios img{
+    height: 50px;
+    margin-top: 100px;     
+}
+
+.bonus p{
+    text-align: justify;
+}
+
 
 .figcap{
+    margin-top: 5px;
     text-align: center;
     font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .figcap2{
@@ -206,15 +304,111 @@ body{
 }
 
 .figure, figure img{
-    width: 128px;
-    height: 128px;
-    border-radius: 62px;
+    /* width: 128px; */
+    height: 32px;
+    display: inline-block;
+    
+}
+
+.main5{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 139, 15);
+}
+
+.alunos{
+    padding-top: 3px;
+    font-size: 3.0rem;
+    text-align: center;
+}
+
+.alunos p{
+    font-size: 2.5rem;
+}
+
+/* .feedback{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+} */
+
+/* #slider2{
+    width: 100%;
+    max-width: 600px;
+    height: 100vw;
+    max-height: 380px;
+    position: relative;
+    overflow: hidden;
+} */
+
+.main6{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.main-l6{
+    width: 80%;
+    text-align: center;  
+}
+
+.titulo6{
+    font-size: 3.0rem;
+}
+
+.planost{
+    color: white;
+}
+
+.planos{
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 2.2rem;
+    text-align: left;
+    color: white;
+}
+
+.contato2 {
+    margin-top: 30px;
+    color: white;
+    width: 100%; 
+}
+
+.form2 {
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: column;
+    color: yellow;
+}
+
+.field2 {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    width: 350px;
+    max-width: 350px;
+    background-color: rgb(203, 198, 207);
+}
+
+.field2:hover {
+    transition: background .4s ;
+    color: white;
+    background-color: red;
+    cursor: pointer;
 }
 
 .footer {
     width: 100%;
     display: flex;
-    background:black;
+    background:gray;
+    text-align: center;
     justify-content: center;
     color: white;
 }
