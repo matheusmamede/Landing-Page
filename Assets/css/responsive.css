@@ -4,6 +4,10 @@
         font-size:50%;
     }
 
+    .main{
+        height: auto;
+    }
+
     .titulo{
         margin-top: 100px;
         text-align: center;
@@ -63,11 +67,11 @@
     }
 
     .main3{
-        height: 205vh;
+        height: auto;
     }
 
     .main4{
-        height: 270vh
+        height: auto;
 
     }
 
@@ -76,7 +80,7 @@
     }
 
     .main5{
-        height: 80vh;
+        height: auto;
     }
     /* .beneficios ul{
         display: grid;
@@ -90,6 +94,9 @@
         background-color: red;
     }
   
+    .main6{
+        height: auto;
+    }
 }
 
 @media (max-width: 687px){
@@ -99,6 +106,7 @@
 
     .main{
         background-image: url(/Assets/img/pexels-victor-freitasp.jpg);  
+        height:auto;
     }
 
     .main2{
@@ -111,7 +119,7 @@
     }
 
     .main3{
-        height: 300vh
+        height: auto;
     }
 
     .form h3{
@@ -147,7 +155,10 @@
         margin-right: auto ;
     }
     .main4{
-        height: 380vh;
+        height: auto;
     }
 
+    .main6{
+        height: auto;
+    }
 }
